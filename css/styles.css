@@ -368,7 +368,7 @@ transform:  translate(-50%, -50%) scale(1.25);
   /* height: 342px; */
   display: flex;
   flex-direction: column;
-  
+
   outline: 1px solid black;
   margin-left: auto;
   margin-right: auto;
@@ -395,7 +395,7 @@ display: flex; */
 }
 
 .modal-info {
-  /* position: absolute; */
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -407,7 +407,7 @@ display: flex; */
 
 
 .modal-icon {
-  /* position: absolute; */
+  position: absolute;
   left: 12px;
   top: 50%;
 }
