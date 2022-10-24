@@ -361,17 +361,23 @@ transform:  translate(-50%, -50%) scale(1.25);
   right: 8px;
 
   position: absolute;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover {
+  fill: var(--accept-color);
 }
 
 .modal-form {
-  width: 448px;
+  /* width: 448px; */
   /* height: 342px; */
   display: flex;
   flex-direction: column;
 
   /* outline: 1px solid black; */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   /* padding: 40px; */
 
 }
@@ -379,7 +385,7 @@ transform:  translate(-50%, -50%) scale(1.25);
 .modal-title {
 font-weight: 700;
 font-size: 20px;
-line-height: 1,15;
+line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 
@@ -389,10 +395,18 @@ margin-bottom: 12px;
 }
 
 .modal-name {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.15;
+letter-spacing: 0.01em;
+
+color: var(--primary-text-color);
+
+
 position: relative;
 display: flex;
 flex-direction: column;
-margin-bottom: 10px;
+margin-bottom: 20px;
 
 }
 
@@ -468,6 +482,7 @@ color: var(--accept-color);
 display: block;
 display: flex;
 align-items: center;
+justify-content: center;
 }
 
 .check-icon {
@@ -494,7 +509,7 @@ align-items: center;
 .check-text:checked + .check-icon {
   border-color: transparent;
   background-color: var(--accept-color);
-  background-image: url(../images/icon\ check\ \(1\).svg);
+  background-image: url(../images/icon.svg);
   background-size: contain;
   background-origin: border-box;
 }
@@ -504,8 +519,8 @@ align-items: center;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 52px;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  /* height: 50px; */
   color: var(--primary-bg-color);
   background-color: var(--accept-color);
  margin-top: 30px;
@@ -738,7 +753,7 @@ background-color: var(--primary-bg-color)
 color: #afb1b8;
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -818,8 +833,12 @@ border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .jion {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
+}
+
+.join-block {
+  margin-left: 70px;
 }
 
 .jion-title {
@@ -905,13 +924,18 @@ display: flex;
 align-items: center;
 text-align: center;
 border: none;
-margin-right: 10px;
+/* margin-right: 10px; */
 }
 
 .action-icon {
   display: block;
   fill: var(--primary-bg-color);
   margin-left: 10px;
+}
+
+.action-btn:hover,
+.action-btn:focus {
+  background-color: var(--hidden-color);
 }
 
 
